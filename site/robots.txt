@@ -1,2 +1,3 @@
 User-agent: *
-Allow: /
+Disallow: /
+# Change to "Allow: /" when TSS-en is published.
