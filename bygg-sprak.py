@@ -86,6 +86,10 @@ MALL = '''<!doctype html>
 <meta property="og:description" content="{description}">
 <meta property="og:url" content="{url}">
 <meta property="og:type" content="website">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/stil.css">
 </head>
 <body>

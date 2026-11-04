@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<title>Mot ett hållbart samhälle – TSS</title>
+<!-- Ikonen för webbplatserna: Samhällskartan förenklad, med samma färger och placering. Licens CC BY-SA 4.0. -->
+<rect width="512" height="512" rx="96" fill="#e9f1f6"/>
+<circle cx="256" cy="256" r="236" fill="#2f6b4f"/><circle cx="256" cy="256" r="208" fill="#fbf7ee"/>
+<rect x="166" y="82" width="180" height="70" rx="14" fill="#2f6b4f"/>
+<rect x="82" y="176" width="84" height="160" rx="14" fill="#1f5fae"/>
+<rect x="346" y="176" width="84" height="160" rx="14" fill="#5b3a8f"/>
+<rect x="166" y="360" width="180" height="70" rx="14" fill="#d9590f"/>
+<circle cx="256" cy="256" r="66" fill="#f2b632"/>
+</svg>
