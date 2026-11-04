@@ -17,6 +17,9 @@ EN = 'https://en.towardssustainablesociety.org/'
 SV = 'https://sv.towardssustainablesociety.org/'
 LICENS = 'https://creativecommons.org/licenses/by-sa/4.0/'
 GITHUB = 'https://github.com/towardssustainablesociety'
+# Besöksräkning med GoatCounter (utan kakor), samma som i tss-sv/bygg/bygg.py.
+MATNING = '''<script>window.goatcounter = {path: function(p) { return location.hostname.split('.')[0] + p }}</script>
+<script data-goatcounter="https://tss-s.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>'''
 
 # Visningsordning i språkraden (språkkod enligt BCP 47).
 ORDNING = ['es', 'fr', 'de', 'pt', 'zh-Hans', 'ar', 'hi', 'ru', 'ja', 'id']
@@ -98,6 +101,7 @@ MALL = '''<!doctype html>
 </nav>
 <p>{licence} <a rel="license" href="{licens}">CC BY-SA 4.0</a> · <a href="{github}">GitHub</a></p>
 </footer>
+{matning}
 </body>
 </html>
 '''
@@ -117,7 +121,7 @@ for k in ORDNING:
                        kropp=kropp.strip().replace('{choice}', knappar(hd)),
                        ai=html.escape(hd['ai']), other=html.escape(hd['other']),
                        rad=sprakrad(k), licence=html.escape(hd['licence']),
-                       licens=LICENS, github=GITHUB)
+                       licens=LICENS, github=GITHUB, matning=MATNING)
     ut = os.path.join(SITE, mapp(k))
     os.makedirs(ut, exist_ok=True)
     with open(os.path.join(ut, 'index.html'), 'w', encoding='utf-8') as f:
